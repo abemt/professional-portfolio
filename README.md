@@ -4,7 +4,7 @@ This is a modern, single-page professional portfolio for a Full-Stack Developer,
 
 ## Live Demo
 
-A live version of this portfolio can be viewed here: **[Link to Deployed Site]** *(Replace with your actual deployment link)*
+A live version of this portfolio can be viewed here: (https://professional-portfolio-mkszq6ul8-abem-tadeles-projects.vercel.app/)
 
 ---
 
