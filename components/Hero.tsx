@@ -21,18 +21,18 @@ const Hero: React.FC = () => {
           <span className="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
           <span className="text-sm font-medium text-gray-300">Available for new projects</span>
         </div>
-        
+
         <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6 tracking-tight">
           Decoupled & Full-Stack
           <span className="block bg-gradient-to-r from-sky-400 via-sky-300 to-indigo-400 text-transparent bg-clip-text mt-2 pb-1">
             Web Architect
           </span>
         </h1>
-        
+
         <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed">
-          Specializing in **React.js** & **PHP** integrations, **Headless WordPress architectures**, **Custom WooCommerce stores**, and performant **Node.js/Express** & **Laravel** backend engines.
+          Specializing in React.js & PHP integrations, Headless WordPress architectures, Custom WooCommerce stores, and performant Node.js/Express & Laravel backend engines.
         </p>
-        
+
         <div className="flex justify-center gap-5 flex-wrap">
           <a
             href="#projects"
