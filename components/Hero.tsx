@@ -32,6 +32,7 @@ const Hero: React.FC = () => {
         <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed">
           Specializing in React.js & PHP integrations, Headless WordPress architectures, Custom WooCommerce stores, and performant Node.js/Express & Laravel backend engines.
         </p>
+        
 
         <div className="flex justify-center gap-5 flex-wrap">
           <a
