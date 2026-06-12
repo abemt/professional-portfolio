@@ -23,11 +23,11 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="gradient-bg text-gray-200 font-sans leading-relaxed relative">
+    <div className="gradient-bg text-slate-800 font-sans leading-relaxed relative">
       <div 
         className="pointer-events-none fixed inset-0 z-30 transition duration-300" 
         style={{
-          background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`
+          background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(99, 102, 241, 0.10), transparent 80%)`
         }}
       ></div>
       <Header />

@@ -22,16 +22,16 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
 
   return (
     <div
-      className="fixed inset-0 bg-black bg-opacity-80 backdrop-blur-sm flex items-center justify-center z-[100] p-4"
+      className="fixed inset-0 bg-slate-900/60 backdrop-blur-md flex items-center justify-center z-[100] p-4"
       onClick={onClose}
     >
       <div
-        className="bg-gray-900 border border-gray-700/50 rounded-xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto p-8 relative animate-fade-in-up"
+        className="bg-white border border-slate-200 rounded-xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto p-8 relative animate-fade-in-up"
         onClick={(e) => e.stopPropagation()}
       >
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors duration-300"
+          className="absolute top-4 right-4 text-slate-400 hover:text-slate-800 transition-colors duration-300"
           aria-label="Close modal"
         >
           <svg
@@ -50,8 +50,8 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
           </svg>
         </button>
         <div className="pr-8">
-            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-2">{project.title}</h2>
-            <p className="text-lg font-semibold text-sky-400 mb-6">
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-2">{project.title}</h2>
+            <p className="text-lg font-semibold text-sky-600 mb-6">
               Role: {project.role}
             </p>
             <img
@@ -59,17 +59,17 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
               alt={project.title}
               className="w-full h-auto object-cover rounded-lg mb-8 shadow-lg"
             />
-            <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
+            <div className="space-y-6 text-slate-600 text-lg leading-relaxed">
               <div>
-                <h3 className="text-2xl font-bold text-sky-400 mb-3 border-b-2 border-sky-400/30 pb-2">The Challenge</h3>
+                <h3 className="text-2xl font-bold text-sky-600 mb-3 border-b-2 border-sky-600/30 pb-2">The Challenge</h3>
                 <p>{project.caseStudy.challenge}</p>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-sky-400 mb-3 border-b-2 border-sky-400/30 pb-2">My Solution</h3>
+                <h3 className="text-2xl font-bold text-sky-600 mb-3 border-b-2 border-sky-600/30 pb-2">My Solution</h3>
                 <p>{project.caseStudy.solution}</p>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-sky-400 mb-3 border-b-2 border-sky-400/30 pb-2">The Outcome</h3>
+                <h3 className="text-2xl font-bold text-sky-600 mb-3 border-b-2 border-sky-600/30 pb-2">The Outcome</h3>
                 <p>{project.caseStudy.outcome}</p>
               </div>
             </div>
