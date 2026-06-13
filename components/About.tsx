@@ -60,10 +60,38 @@ const About: React.FC = () => {
             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
               Today, I specialize in combining PHP and React.js to build modern architectures, focusing heavily on Headless WordPress, Custom WooCommerce engines, and scalable backend services built with Node.js/Express and Laravel. I am passionate about writing maintainable, clean code, optimizing database performance, and delivering flawless digital storefronts that stand out visually and operationally.
             </p>
-            <p className="text-lg text-slate-700 font-semibold flex flex-col sm:flex-row sm:items-center gap-2">
-              <span className="text-sky-600 font-bold">Education:</span>
-              <span className="text-slate-800">B.Sc. in Software Engineering, Hawassa University</span>
-            </p>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 border-t border-slate-200/50 pt-6 text-left text-base">
+              <li className="flex flex-col sm:flex-row sm:items-center gap-1">
+                <span className="text-slate-400 font-medium min-w-[90px]">Name:</span>
+                <span className="text-slate-800 font-semibold">Abem Tadele</span>
+              </li>
+              <li className="flex flex-col sm:flex-row sm:items-center gap-1">
+                <span className="text-slate-400 font-medium min-w-[90px]">Location:</span>
+                <span className="text-slate-800 font-semibold">Hawassa, Ethiopia</span>
+              </li>
+              <li className="flex flex-col sm:flex-row sm:items-center gap-1">
+                <span className="text-slate-400 font-medium min-w-[90px]">Email:</span>
+                <a href="mailto:abemtadele@outlook.com" className="text-sky-600 hover:text-indigo-650 hover:underline font-semibold break-all">
+                  abemtadele@outlook.com
+                </a>
+              </li>
+              <li className="flex flex-col sm:flex-row sm:items-center gap-1">
+                <span className="text-slate-400 font-medium min-w-[90px]">Phone:</span>
+                <a href="tel:+251909162143" className="text-sky-600 hover:text-indigo-650 hover:underline font-semibold">
+                  +251 909 162 143
+                </a>
+              </li>
+              <li className="flex flex-col sm:flex-row sm:items-center gap-1">
+                <span className="text-slate-400 font-medium min-w-[90px]">Upwork:</span>
+                <a href="https://www.upwork.com/freelancers/~011c205e664a068bbf?mp_source=share" target="_blank" rel="noopener noreferrer" className="text-sky-600 hover:text-indigo-650 hover:underline font-semibold">
+                  View Upwork Profile
+                </a>
+              </li>
+              <li className="flex flex-col sm:flex-row sm:items-center gap-1">
+                <span className="text-slate-400 font-medium min-w-[90px]">Education:</span>
+                <span className="text-slate-800 font-semibold">B.Sc. in Software Engineering, Hawassa University</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

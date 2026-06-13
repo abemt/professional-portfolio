@@ -75,7 +75,7 @@ export const PROJECTS_DATA: Project[] = [
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     description: 'A premium full-stack analytics engine powered by a Laravel API backend and a React.js single-page application, featuring real-time data visualization, Node.js queue processing, and microsecond response optimization.',
     technologies: ['Laravel', 'PHP', 'Node.js/Express', 'React.js', 'MySQL', 'Docker', 'RESTful APIs'],
-    liveDemoUrl: 'https://saas-user-analytics-dashboard.vercel.app/',
+    liveDemoUrl: 'https://saas.abemt.dev',
     caseStudy: {
       challenge: 'A high-traffic SaaS platform required an analytics cockpit capable of aggregating millions of daily user interactions and rendering them dynamically without degrading application speed.',
       solution: 'Designed a secure, decoupled architecture. I built a robust, high-performance RESTful API using Laravel (PHP) utilizing Redis for request caching and Node.js/Express workers to handle background queue tasks. Developed a modern, component-driven dashboard with React.js and Tailwind CSS, leveraging custom WebSockets for live telemetry data.',
@@ -89,7 +89,7 @@ export const PROJECTS_DATA: Project[] = [
     image: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     description: 'A custom headless WordPress (PHP) platform utilizing GraphQL and a React.js frontend, bridging the power of WordPress content management with the performance and interactivity of a modern React single-page app.',
     technologies: ['WordPress', 'Headless Architecture', 'PHP', 'GraphQL', 'React.js', 'ACF'],
-    liveDemoUrl: 'https://custom-word-press-theme-and-plugin.vercel.app/',
+    liveDemoUrl: 'https://wordpress.abemt.dev',
     caseStudy: {
       challenge: 'A major digital marketing agency needed to decouple their content management from their delivery layer to dramatically improve performance, SEO, and developer agility, while keeping WordPress for their editorial team.',
       solution: 'Architected a headless WordPress instance using PHP and WPGraphQL. Built custom Gutenberg blocks with React.js for content editing. Created a lightning-fast React.js frontend that consumes the WordPress GraphQL API, using Server-Side Rendering (SSR) and Tailwind CSS for visual excellence.',
@@ -103,7 +103,7 @@ export const PROJECTS_DATA: Project[] = [
     image: 'https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     description: 'A fully custom WooCommerce digital storefront featuring a Node.js/Express cart validation layer, high-performance PHP backend templates, and a dynamic React.js checkout experience.',
     technologies: ['WooCommerce', 'WordPress', 'React.js', 'Node.js/Express', 'PHP', 'MySQL', 'Stripe API'],
-    liveDemoUrl: 'https://high-performance-woo-commerce-store.vercel.app/#/products',
+    liveDemoUrl: 'https://woocomerce.abemt.dev',
     caseStudy: {
       challenge: "An enterprise retailer's standard WooCommerce site suffered from checkout bottlenecks and slow product filtering, causing a high cart abandonment rate.",
       solution: 'Developed a lightweight, fully custom WordPress/WooCommerce theme utilizing optimized PHP backend templates. Built a React.js product filtering module and custom checkout drawer. Integrated a Node.js & Express microservice to validate stock allocations in real-time, reducing checkout friction and improving transaction security via Stripe API.',
