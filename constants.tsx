@@ -18,6 +18,10 @@ const AcfIcon = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height=
 const GitIcon = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8"><circle cx="12" cy="12" r="4"/><path d="M12 3v5"/><path d="M12 17v4"/><path d="m16.5 7.5-.88.88"/><path d="M21 12h-4"/><path d="M3 12h4"/><path d="m7.5 7.5.88.88"/></svg>;
 const DockerIcon = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8"><path d="M22 12c0-2.5-1-5-5-5H7c-4 0-5 2.5-5 5v3c0 2.5 1 5 5 5h10c4 0 5-2.5 5-5Z"/><path d="M7 12h2.5"/><path d="M11 12h2.5"/><path d="M15 12h1.5"/></svg>;
 const FigmaIcon = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8"><path d="M12 12a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/><path d="M6 12a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/><path d="M6 6a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/><path d="M18 6a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/><path d="M6 18a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/></svg>;
+const WorkflowIcon = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8"><rect width="8" height="8" x="3" y="3" rx="2"/><path d="M7 11v4a2 2 0 0 0 2 2h4"/><rect width="8" height="8" x="13" y="13" rx="2"/></svg>;
+const SparkIcon = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.287 1.288L3 12l5.8 1.9a2 2 0 0 1 1.288 1.287L12 21l1.9-5.8a2 2 0 0 1 1.287-1.288L21 12l-5.8-1.9a2 2 0 0 1-1.288-1.287Z"/></svg>;
+const WebhookIcon = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8"><path d="M18 16.98h-5.99c-1.1 0-1.95.94-2.48 1.9A4 4 0 0 1 2 17c.01-.7.2-1.4.57-2"/><path d="m6 17 3.13-5.78c.53-.97.1-2.18-.5-3.1a4 4 0 1 1 6.89-4.06"/><path d="m12 6 3.13 5.73C15.66 12.7 16.9 13 18 13a4 4 0 0 1 0 8"/></svg>;
+const BotIcon = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>;
 
 
 export const NAV_LINKS: NavLink[] = [
@@ -49,6 +53,15 @@ export const SKILLS_DATA: SkillCategory[] = [
     ],
   },
   {
+    title: 'AI & Automation',
+    skills: [
+      { name: 'n8n / Make.com', icon: <WorkflowIcon /> },
+      { name: 'OpenAI & Gemini APIs', icon: <SparkIcon /> },
+      { name: 'AI Agent Workflows', icon: <BotIcon /> },
+      { name: 'Webhooks & Middleware', icon: <WebhookIcon /> },
+    ],
+  },
+  {
     title: 'WordPress Niches',
     skills: [
       { name: 'Headless Architecture', icon: <WpIcon /> },
@@ -68,6 +81,20 @@ export const SKILLS_DATA: SkillCategory[] = [
 ];
 
 export const PROJECTS_DATA: Project[] = [
+  {
+    id: 4,
+    title: 'AI Workflow Automation Suite',
+    role: 'Automation Engineer (n8n, Gemini API & WordPress)',
+    image: 'https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?q=80&w=2070&auto=format&fit=crop',
+    description: 'A production automation platform built on self-hosted n8n: AI lead intake with intent classification, an AI content pipeline publishing to WordPress via REST API, and WooCommerce order-ops automation — all with custom JavaScript code nodes where no-code stops.',
+    technologies: ['n8n', 'Gemini API', 'Webhooks', 'WordPress REST API', 'WooCommerce', 'Docker', 'JavaScript'],
+    liveDemoUrl: '',
+    caseStudy: {
+      challenge: 'Small businesses lose hours daily to manual lead triage, content publishing and order administration — but off-the-shelf no-code automations break the moment real data validation, deduplication or API quirks appear.',
+      solution: 'Engineered a suite of n8n workflows on self-hosted Docker infrastructure: HMAC-secured webhook intake, custom JavaScript code nodes for validation and transformation, Gemini API calls for intent classification and content drafting, and delivery into WordPress, CRMs, Google Sheets and Slack — with retry logic, dead-letter queues and alerting built in.',
+      outcome: 'Lead response time dropped from hours to under 5 seconds with automatic spam gating. The AI content pipeline drafts and schedules posts end-to-end, and order-ops automation eliminated daily spreadsheet work — each workflow documented with a data-mapping spec and handover video.',
+    },
+  },
   {
     id: 1,
     title: 'Enterprise SaaS Analytics Dashboard',

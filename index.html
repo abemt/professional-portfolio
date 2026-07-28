@@ -4,60 +4,58 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abem T. | Full-Stack Developer</title>
+    <title>Abem Tadele — Full-Stack Engineer | WordPress, APIs & AI Automation</title>
+    <meta name="description" content="Full-stack engineer specializing in custom WordPress & WooCommerce builds, Laravel REST APIs, and AI-powered workflow automation with n8n, Make and the OpenAI/Gemini APIs." />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+              display: ['"Space Grotesk"', 'Inter', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <style>
       :root {
-        --bg-dark: #f8fafc;
-        --bg-light: #ffffff;
-        --primary: #0284c7; /* sky-600 */
-        --secondary: #4f46e5; /* indigo-600 */
-        --text-light: #0f172a; /* slate-900 */
-        --text-dark: #475569; /* slate-600 */
+        --bg: #ffffff;
+        --ink: #0f172a;
+        --muted: #475569;
+        --accent: #0f766e; /* teal-700 */
       }
 
       body {
-        font-family: 'Poppins', sans-serif;
-        background-color: var(--bg-dark);
-        color: var(--text-light);
+        font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+        background-color: var(--bg);
+        color: var(--ink);
+        -webkit-font-smoothing: antialiased;
       }
 
-      /* Animated Gradient Background */
-      .gradient-bg {
-        background: linear-gradient(-45deg, #f8fafc, #eff6ff, #f5f3ff, #f8fafc);
-        background-size: 400% 400%;
-        animation: gradient 15s ease infinite;
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Space Grotesk', 'Inter', sans-serif;
+        letter-spacing: -0.01em;
       }
 
-      @keyframes gradient {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
-
-      /* Custom Scrollbar */
+      /* Minimal scrollbar */
       ::-webkit-scrollbar {
-        width: 8px;
+        width: 10px;
       }
       ::-webkit-scrollbar-track {
-        background: var(--bg-dark);
+        background: #f1f5f9;
       }
       ::-webkit-scrollbar-thumb {
-        background-color: var(--primary);
-        border-radius: 10px;
-        border: 2px solid var(--bg-dark);
+        background-color: #cbd5e1;
+        border-radius: 8px;
+        border: 2px solid #f1f5f9;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background-color: var(--secondary);
+        background-color: #94a3b8;
       }
 
       /* For offsetting the fixed header when navigating to sections */
@@ -87,7 +85,7 @@
 </script>
 <link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-slate-50 text-slate-800">
+  <body class="bg-white text-slate-800">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>

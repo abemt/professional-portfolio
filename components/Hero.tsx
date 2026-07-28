@@ -10,45 +10,47 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
-      {/* Decorative background grid and ambient glows */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-60"></div>
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl"></div>
+    <section id="home" className="min-h-screen flex items-center justify-center relative pt-20 bg-white">
+      {/* Subtle dot grid, fades toward edges */}
+      <div className="absolute inset-0 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:24px_24px] [mask-image:radial-gradient(ellipse_55%_50%_at_50%_45%,#000_60%,transparent_100%)]"></div>
 
-      <div className="container mx-auto px-6 text-center z-10 relative">
-        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/80 border border-slate-200/80 backdrop-blur-md mb-6 shadow-sm animate-pulse">
-          <span className="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
-          <span className="text-sm font-medium text-slate-700">Available for new projects</span>
-        </div>
+      <div className="container mx-auto px-6 z-10 relative max-w-5xl">
+        <div className="text-center">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-teal-50 border border-teal-200 mb-8">
+            <span className="w-2 h-2 rounded-full bg-teal-600"></span>
+            <span className="text-sm font-medium text-teal-800">Available for new projects</span>
+          </div>
 
-        <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 leading-tight mb-6 tracking-tight">
-          Decoupled & Full-Stack
-          <span className="block bg-gradient-to-r from-sky-600 via-blue-600 to-indigo-600 text-transparent bg-clip-text mt-2 pb-1">
-            Web Architect
-          </span>
-        </h1>
+          <p className="text-sm font-semibold tracking-widest uppercase text-teal-700 mb-5">
+            PHP &middot; React.js &middot; WordPress &middot; n8n / Make
+          </p>
 
-        <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-12 leading-relaxed">
-          Specializing in React.js & PHP integrations, Headless WordPress architectures, Custom WooCommerce stores, and performant Node.js/Express & Laravel backend engines.
-        </p>
-        
+          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 leading-[1.05] mb-8 tracking-tight">
+            Software engineering for the web — and the workflows behind it.
+          </h1>
 
-        <div className="flex justify-center gap-5 flex-wrap">
-          <a
-            href="#projects"
-            onClick={(e) => handleNavClick(e, '#projects')}
-            className="bg-gradient-to-r from-sky-500 to-indigo-600 text-white font-bold py-4 px-10 rounded-full hover:from-sky-600 hover:to-indigo-750 transition-all duration-300 transform hover:scale-105 shadow-xl shadow-sky-500/20"
-          >
-            Explore Projects
-          </a>
-          <a
-            href="#contact"
-            onClick={(e) => handleNavClick(e, '#contact')}
-            className="bg-white/90 text-slate-700 font-bold py-4 px-10 rounded-full hover:bg-slate-50 hover:text-sky-600 border border-slate-200 transition-all duration-300 transform hover:scale-105 shadow-md backdrop-blur-md"
-          >
-            Let's Collaborate
-          </a>
+          <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-12 leading-relaxed">
+            I build custom WordPress &amp; WooCommerce platforms, Laravel REST APIs, and AI-powered
+            workflow automations with n8n, Make and the OpenAI/Gemini APIs — engineered for performance,
+            built to be maintained.
+          </p>
+
+          <div className="flex justify-center gap-4 flex-wrap">
+            <a
+              href="#projects"
+              onClick={(e) => handleNavClick(e, '#projects')}
+              className="bg-slate-900 text-white font-semibold py-3.5 px-8 rounded-lg hover:bg-slate-800 transition-colors duration-200"
+            >
+              View projects
+            </a>
+            <a
+              href="#contact"
+              onClick={(e) => handleNavClick(e, '#contact')}
+              className="bg-white text-slate-900 font-semibold py-3.5 px-8 rounded-lg border border-slate-300 hover:border-slate-900 transition-colors duration-200"
+            >
+              Get in touch
+            </a>
+          </div>
         </div>
       </div>
     </section>

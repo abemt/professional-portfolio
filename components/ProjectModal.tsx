@@ -51,7 +51,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
         </button>
         <div className="pr-8">
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-2">{project.title}</h2>
-            <p className="text-lg font-semibold text-sky-600 mb-6">
+            <p className="text-lg font-semibold text-teal-700 mb-6">
               Role: {project.role}
             </p>
             <img
@@ -61,15 +61,15 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
             />
             <div className="space-y-6 text-slate-600 text-lg leading-relaxed">
               <div>
-                <h3 className="text-2xl font-bold text-sky-600 mb-3 border-b-2 border-sky-600/30 pb-2">The Challenge</h3>
+                <h3 className="text-2xl font-bold text-teal-700 mb-3 border-b border-slate-200 pb-2">The Challenge</h3>
                 <p>{project.caseStudy.challenge}</p>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-sky-600 mb-3 border-b-2 border-sky-600/30 pb-2">My Solution</h3>
+                <h3 className="text-2xl font-bold text-teal-700 mb-3 border-b border-slate-200 pb-2">My Solution</h3>
                 <p>{project.caseStudy.solution}</p>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-sky-600 mb-3 border-b-2 border-sky-600/30 pb-2">The Outcome</h3>
+                <h3 className="text-2xl font-bold text-teal-700 mb-3 border-b border-slate-200 pb-2">The Outcome</h3>
                 <p>{project.caseStudy.outcome}</p>
               </div>
             </div>

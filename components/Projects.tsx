@@ -47,14 +47,15 @@ const Projects: React.FC = () => {
       className={`py-24 bg-slate-100/40 fade-in-section ${isVisible ? 'is-visible' : ''}`}
     >
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center text-slate-900 mb-16">
+        <h2 className="font-display text-4xl font-bold text-center text-slate-900 mb-16 tracking-tight">
           Selected Works
+          <span className="block w-12 h-1 bg-teal-700 mx-auto mt-4 rounded-full"></span>
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {PROJECTS_DATA.map((project) => (
             <div
               key={project.id}
-              className="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-sky-500/10 hover:-translate-y-2 flex flex-col border border-slate-200/80"
+              className="bg-white rounded-xl overflow-hidden transition-colors duration-200 flex flex-col border border-slate-200 hover:border-teal-700"
             >
               <img
                 src={project.image}
@@ -62,10 +63,10 @@ const Projects: React.FC = () => {
                 className="w-full h-52 object-cover"
               />
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold text-slate-900 mb-1">
+                <h3 className="font-display text-xl font-bold text-slate-900 mb-1">
                   {project.title}
                 </h3>
-                <p className="text-sm font-semibold text-sky-600 mb-3">
+                <p className="text-sm font-semibold text-teal-700 mb-3">
                   {project.role}
                 </p>
                 <p className="text-slate-600 mb-4 flex-grow text-sm leading-relaxed">{project.description}</p>
@@ -73,26 +74,28 @@ const Projects: React.FC = () => {
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full border border-slate-200/50"
+                      className="bg-slate-100 text-slate-700 text-xs font-medium px-2.5 py-1 rounded-md"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
                 <div className="flex justify-between mt-auto pt-4 border-t border-slate-100 gap-4">
-                  <a
-                    href={project.liveDemoUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 text-center bg-slate-100 text-slate-700 font-semibold py-2 px-4 rounded-lg hover:bg-slate-200 transition-colors duration-300 border border-slate-200/40"
-                  >
-                    Live Demo
-                  </a>
+                  {project.liveDemoUrl && (
+                    <a
+                      href={project.liveDemoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 text-center bg-white text-slate-900 font-semibold py-2 px-4 rounded-lg border border-slate-300 hover:border-slate-900 transition-colors duration-200 text-sm"
+                    >
+                      Live Demo
+                    </a>
+                  )}
                   <button
                     onClick={() => openModal(project)}
-                    className="flex-1 text-center bg-sky-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-sky-700 transition-colors duration-300"
+                    className="flex-1 text-center bg-slate-900 text-white font-semibold py-2 px-4 rounded-lg hover:bg-slate-800 transition-colors duration-200 text-sm"
                   >
-                    View Details
+                    Case Study
                   </button>
                 </div>
               </div>

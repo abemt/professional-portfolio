@@ -35,23 +35,24 @@ const Skills: React.FC = () => {
       className={`py-24 bg-slate-50/50 fade-in-section ${isVisible ? 'is-visible' : ''}`}
     >
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center text-slate-900 mb-16">
+        <h2 className="font-display text-4xl font-bold text-center text-slate-900 mb-16 tracking-tight">
           Technical Skills
+          <span className="block w-12 h-1 bg-teal-700 mx-auto mt-4 rounded-full"></span>
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {SKILLS_DATA.map((category: SkillCategory) => (
             <div
               key={category.title}
-              className="bg-white p-6 rounded-xl shadow-md border border-slate-200/80 transition-all duration-300 hover:border-sky-500 hover:shadow-sky-500/10 hover:-translate-y-2"
+              className="bg-white p-6 rounded-xl border border-slate-200 transition-colors duration-200 hover:border-teal-700"
             >
-              <h3 className="text-2xl font-bold text-sky-600 mb-6 text-center">
+              <h3 className="font-display text-lg font-bold text-slate-900 mb-5">
                 {category.title}
               </h3>
-              <ul className="space-y-4">
+              <ul className="space-y-3.5">
                 {category.skills.map((skill: Skill) => (
-                  <li key={skill.name} className="flex items-center text-lg">
-                    <span className="text-sky-600 mr-4">{skill.icon}</span>
-                    <span className="text-slate-700">{skill.name}</span>
+                  <li key={skill.name} className="flex items-center">
+                    <span className="text-teal-700 mr-3 [&>svg]:w-5 [&>svg]:h-5">{skill.icon}</span>
+                    <span className="text-slate-700 text-sm font-medium">{skill.name}</span>
                   </li>
                 ))}
               </ul>
