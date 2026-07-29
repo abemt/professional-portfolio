@@ -86,9 +86,9 @@ export const PROJECTS_DATA: Project[] = [
     title: 'AI Workflow Automation Suite',
     role: 'Automation Engineer (n8n, Gemini API & WordPress)',
     image: 'https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?q=80&w=2070&auto=format&fit=crop',
-    description: 'A production automation platform built on self-hosted n8n: AI lead intake with intent classification, an AI content pipeline publishing to WordPress via REST API, and WooCommerce order-ops automation — all with custom JavaScript code nodes where no-code stops.',
+    description: 'A production automation platform built on self-hosted n8n (live at automations.abemt.dev): AI lead intake with intent classification, an AI content pipeline publishing to WordPress via REST API, and WooCommerce order-ops automation — all with custom JavaScript code nodes where no-code stops.',
     technologies: ['n8n', 'Gemini API', 'Webhooks', 'WordPress REST API', 'WooCommerce', 'Docker', 'JavaScript'],
-    liveDemoUrl: '',
+    liveDemoUrl: 'https://github.com/abemt/ai-automation-suite',
     caseStudy: {
       challenge: 'Small businesses lose hours daily to manual lead triage, content publishing and order administration — but off-the-shelf no-code automations break the moment real data validation, deduplication or API quirks appear.',
       solution: 'Engineered a suite of n8n workflows on self-hosted Docker infrastructure: HMAC-secured webhook intake, custom JavaScript code nodes for validation and transformation, Gemini API calls for intent classification and content drafting, and delivery into WordPress, CRMs, Google Sheets and Slack — with retry logic, dead-letter queues and alerting built in.',

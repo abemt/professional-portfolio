@@ -88,7 +88,7 @@ const Projects: React.FC = () => {
                       rel="noopener noreferrer"
                       className="flex-1 text-center bg-white text-slate-900 font-semibold py-2 px-4 rounded-lg border border-slate-300 hover:border-slate-900 transition-colors duration-200 text-sm"
                     >
-                      Live Demo
+                      {project.liveDemoUrl.includes('github.com') ? 'View Code' : 'Live Demo'}
                     </a>
                   )}
                   <button
