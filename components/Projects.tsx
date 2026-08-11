@@ -80,15 +80,25 @@ const Projects: React.FC = () => {
                     </span>
                   ))}
                 </div>
-                <div className="flex justify-between mt-auto pt-4 border-t border-slate-100 gap-4">
+                <div className="flex justify-between mt-auto pt-4 border-t border-slate-100 gap-3">
                   {project.liveDemoUrl && (
                     <a
                       href={project.liveDemoUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 text-center bg-white text-slate-900 font-semibold py-2 px-4 rounded-lg border border-slate-300 hover:border-slate-900 transition-colors duration-200 text-sm"
+                      className="flex-1 text-center bg-white text-slate-900 font-semibold py-2 px-3 rounded-lg border border-slate-300 hover:border-slate-900 transition-colors duration-200 text-sm"
                     >
                       {project.liveDemoUrl.includes('github.com') ? 'View Code' : 'Live Demo'}
+                    </a>
+                  )}
+                  {project.codeUrl && (
+                    <a
+                      href={project.codeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 text-center bg-white text-slate-900 font-semibold py-2 px-3 rounded-lg border border-slate-300 hover:border-slate-900 transition-colors duration-200 text-sm"
+                    >
+                      View Code
                     </a>
                   )}
                   <button

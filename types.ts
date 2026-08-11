@@ -21,6 +21,7 @@ export interface Project {
   description: string;
   technologies: string[];
   liveDemoUrl: string;
+  codeUrl?: string;
   caseStudy: {
     challenge: string;
     solution: string;
