@@ -52,7 +52,7 @@ const About: React.FC = () => {
           </div>
           <div className="md:w-2/3 text-center md:text-left">
             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-              I am a dedicated Full-Stack Developer specializing in crafting high-performance, decoupled web experiences. My technical journey began with a B.Sc. in Software Engineering from Hawassa University, which laid a robust foundation for building advanced client solutions.
+              I am a dedicated Full-Stack Developer specializing in crafting high-performance, decoupled web experiences. My technical journey began with a B.Sc. in Information Technology from Hawassa University, which laid a robust foundation for building advanced client solutions.
             </p>
             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
               Today I work across two connected fronts. I engineer high-performance web platforms — headless WordPress, custom WooCommerce, and Laravel/Node.js backends — and I automate the business workflows around them: AI-powered lead intake, content pipelines and order operations built with n8n, Make and the OpenAI/Gemini APIs. Because I write real code, my automations don't stop where the no-code tools do.
@@ -86,7 +86,7 @@ const About: React.FC = () => {
               </li>
               <li className="flex flex-col sm:flex-row sm:items-center gap-1">
                 <span className="text-slate-400 font-medium min-w-[90px]">Education:</span>
-                <span className="text-slate-800 font-semibold">B.Sc. in Software Engineering, Hawassa University</span>
+                <span className="text-slate-800 font-semibold">B.Sc. in Information Technology, Hawassa University</span>
               </li>
             </ul>
           </div>
