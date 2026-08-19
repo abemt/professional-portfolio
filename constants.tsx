@@ -97,6 +97,20 @@ export const PROJECTS_DATA: Project[] = [
     },
   },
   {
+    id: 5,
+    title: 'TradeMate — AI Trading Discipline Companion',
+    role: 'Product Engineer (React 19, Cloudflare Workers & Gemini)',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=2070&auto=format&fit=crop',
+    description: 'An installable PWA that fixes the real problem in discretionary trading — execution. AI vision grades chart setups against the trader\'s own playbook, a 20-second journal captures trades and emotions offline-first, and discipline XP is earned for process — never for profits. Runs entirely on Cloudflare\'s free tier at $0/month.',
+    technologies: ['React 19', 'TypeScript', 'Cloudflare Workers', 'D1', 'Hono', 'Gemini Vision', 'Zustand', 'PWA', 'Tailwind v4'],
+    codeUrl: 'https://github.com/abemt/trademate',
+    caseStudy: {
+      challenge: 'Trading apps give you charts; almost none fix the actual failure mode — overtrading, revenge entries, fear-moved stop-losses and skipped journaling. The tool had to enforce the trader\'s own rules at the moment discipline slips, and cost nothing to run.',
+      solution: 'Built a single Cloudflare Worker serving both the PWA and API: Gemini vision grades uploaded chart setups A–F against a stored personal playbook with a confluence checklist; an offline-first journal (localStorage write queue, idempotent upserts) logs direction, risk, R-multiple and emotion tags in ~20 seconds; a risk guard visualizes trades-per-day as spendable tokens with circuit breakers after consecutive losses; and a news watcher classifies headline severity, waking the app through payload-free Web Push signed with WebCrypto ES256. Chart screenshots are compressed client-side to WebP and stored as D1 blobs to stay inside the free tier.',
+      outcome: 'A senior-grade product shipped solo and used in live trading: strict-JSON AI contracts with provider fallback (Gemini → Groq), push notifications with the app fully closed, and years of chart history in 5 GB of free storage. Its discipline-XP scoreboard — points for skipping bad setups — is now expanding into a full nervous-system journaling system in v2.',
+    },
+  },
+  {
     id: 1,
     title: 'Enterprise SaaS Analytics Dashboard',
     role: 'Full-Stack Developer (React.js & Laravel)',
